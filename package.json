@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/RichDonnellan/koreanbbq/issues"
   },
-  "homepage": "https://github.com/RichDonnellan/koreanbbq#readme"
+  "homepage": "https://github.com/RichDonnellan/koreanbbq#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.5",
+    "morgan": "^1.6.1"
+  }
 }
