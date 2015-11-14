@@ -19,10 +19,14 @@ function update(request, response) {
   // code here
 }
 
-function destroy (request, response) {
+function destroy(request, response) {
   // code here
 }
 
 module.exports = {
- // code here
+ getMenuItems: index,
+ showMenuItem: show,
+ createMenuItem: create,
+ updateMenuItem: update,
+ deleteMenuItem: destroy
 }
