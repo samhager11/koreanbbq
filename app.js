@@ -4,6 +4,7 @@ var express     = require('express'),
     logger      = require('morgan'),
     bodyParser  = require('body-parser'),
 	     mongoose	= require('mongoose'),
+       ejs      = require('ejs'),
     ejsLayouts  = require('express-ejs-layouts')
 
 // app configurations
