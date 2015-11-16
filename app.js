@@ -30,7 +30,7 @@ app.get('/about', function(req, res) {
     title: 'About',
     message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   };
-  res.render('contact', data);
+  res.render('about', data);
 });
 
 app.listen(port, function() {
