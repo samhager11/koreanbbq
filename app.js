@@ -11,7 +11,7 @@ var express     = require('express'),
 app.set('view engine', 'ejs')
 
 // middleware
-app.use(ejsLayouts)
+//app.use(ejsLayouts)
 
 //establish connection to mongo database
 mongoose.connect('mongodb://localhost/koreanBBQdb')
