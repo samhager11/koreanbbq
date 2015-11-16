@@ -16,6 +16,22 @@ app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended : false}))
 
+// set routes
+app.get('/menu', function(req, res) {
+  var data = {
+    title: 'Menu',
+    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  };
+  res.render('menu', data);
+});
+
+app.get('/about', function(req, res) {
+  var data = {
+    title: 'About',
+    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  };
+  res.render('contact', data);
+});
 
 app.listen(port, function() {
   console.log('Application server started successfully on port: ' + port)
