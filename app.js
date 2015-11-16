@@ -4,6 +4,13 @@ var express     = require('express'),
     logger      = require('morgan'),
     bodyParser  = require('body-parser'),
 	     mongoose	= require('mongoose'),
+    ejsLayouts  = require('express-ejs-layouts')
+
+// app configurations
+app.set('view engine', 'ejs')
+
+// middleware
+app.use(ejsLayouts)
 
 //establish connection to mongo database
 mongoose.connect('mongodb://localhost/koreanBBQdb')
